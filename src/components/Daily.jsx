@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import { Modal, Card } from './UI';
 import { db } from '../firebase/config';
 import { collection, addDoc } from 'firebase/firestore';
-import { EnergyIcon, BrainCircuit, Meh, Wind, CheckCircle, Plus, X } from 'lucide-react';
+import { Zap, BrainCircuit, Meh, Wind, CheckCircle, Plus, X } from 'lucide-react';
 
 export const DailyAlignmentModal = ({ onSave, userId }) => {
     const [focus, setFocus] = useState('');
     const [mood, setMood] = useState('');
     const moods = [
-        { label: 'Energizado', icon: <EnergyIcon className="w-6 h-6 text-green-400" /> },
+        { label: 'Energizado', icon: <Zap className="w-6 h-6 text-green-400" /> },
         { label: 'Enfocado', icon: <BrainCircuit className="w-6 h-6 text-blue-400" /> },
         { label: 'Neutral', icon: <Meh className="w-6 h-6 text-gray-400" /> },
         { label: 'Cansado', icon: <Wind className="w-6 h-6 text-red-400" /> },
@@ -49,7 +49,7 @@ export const DailyAlignmentModal = ({ onSave, userId }) => {
 export const DailyFocusToDo = ({ alignment, tasks, onAddTask, onToggleTask, onDeleteTask }) => {
     const [newTaskText, setNewTaskText] = useState('');
     const moodIcons = {
-        'Energizado': <EnergyIcon className="w-5 h-5 text-green-400" />,
+        const moodIcons = { 'Energizado': <Zap className="w-5 h-5 text-green-400" />,
         'Enfocado': <BrainCircuit className="w-5 h-5 text-blue-400" />,
         'Neutral': <Meh className="w-5 h-5 text-gray-400" />,
         'Cansado': <Wind className="w-5 h-5 text-red-400" />,
