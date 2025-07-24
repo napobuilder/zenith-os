@@ -3,7 +3,7 @@ import { auth, db } from './firebase/config';
 import { onAuthStateChanged, signInAnonymously } from 'firebase/auth';
 import { collection, query, onSnapshot, addDoc, deleteDoc, doc, updateDoc, orderBy } from 'firebase/firestore';
 
-import { ErrorModal, SettingsManager } from './components/System';
+import { ErrorModal, SettingsManager } from './components/System'; // Added comment to force Netlify re-deploy
 import { SleepCycleCalculator, PomodoroTimer } from './components/Productivity';
 import { DailyAlignmentModal, DailyFocusToDo } from './components/Daily';
 import { IncomeTracker, ExpenseTracker, FinancialDashboard } from './components/Finance';
