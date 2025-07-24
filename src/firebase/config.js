@@ -4,13 +4,13 @@ import { getFirestore } from 'firebase/firestore';
 
 // --- CONFIGURACIÓN DE FIREBASE ---
 const firebaseConfig = {
-  apiKey: "AIzaSyAC2fgQaPxHqjS_I7G06sSvRUZnWz8HdJg",
-  authDomain: "zenith-57328.firebaseapp.com",
-  projectId: "zenith-57328",
-  storageBucket: "zenith-57328.appspot.com",
-  messagingSenderId: "292417246834",
-  appId: "1292417246834web2a52d365e3d37395c114eb",
-  measurementId: "G-6PDXYHDYNX"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
 // Inicializar Firebase
