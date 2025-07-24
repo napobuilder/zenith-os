@@ -49,7 +49,7 @@ export const DailyAlignmentModal = ({ onSave, userId }) => {
 export const DailyFocusToDo = ({ alignment, tasks, onAddTask, onToggleTask, onDeleteTask }) => {
     const [newTaskText, setNewTaskText] = useState('');
     const moodIcons = {
-        const moodIcons = { 'Energizado': <Zap className="w-5 h-5 text-green-400" />,
+        'Energizado': <Zap className="w-5 h-5 text-green-400" />,
         'Enfocado': <BrainCircuit className="w-5 h-5 text-blue-400" />,
         'Neutral': <Meh className="w-5 h-5 text-gray-400" />,
         'Cansado': <Wind className="w-5 h-5 text-red-400" />,
