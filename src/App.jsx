@@ -81,7 +81,7 @@ export default function App() {
       <div className="min-h-screen text-gray-200 font-sans relative">
         <div className={`container mx-auto p-4 sm:p-6 lg:p-8 transition-opacity duration-500 ${isAligned ? 'opacity-100' : 'opacity-0'}`}>
           <header className="mb-8 text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-white">Zenith OS</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-white text-red-500">Zenith OS</h1>
             <p className="text-purple-300 text-lg">Tu centro de comando estratégico.</p>
           </header>
           <main className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
